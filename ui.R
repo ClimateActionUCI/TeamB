@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(pageWithSidebar(
-                        headerPanel("Land Use Change Under Two Different Emissions Scenarios"),
+                        headerPanel("Land Use Change Under Four Different Emissions Scenarios"),
                         sidebarPanel(
                                      sliderInput("year", "Year:",
                                                  min = 2000, max = 2100, step = 25, value = 2000),
