@@ -14,3 +14,4 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
                                   plotOutput("values", width = "100%", height = "800px"),
                                   img(src="legend.png", align = "bottom", height="100%", width = "100%"))
                                      ))                                           
+      #runGitHub('ClimateActionUCI/TeamB')
