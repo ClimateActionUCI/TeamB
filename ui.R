@@ -1,6 +1,7 @@
 library(shiny)
+library(shinythemes)
 
-shinyUI(pageWithSidebar(
+shinyUI(fluidPage(theme = shinytheme("superhero"),
                         headerPanel("Land Use Change Under Four Different IPCC Emissions Scenarios"),
                         sidebarPanel(
                                      sliderInput("year", "Year:",
