@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(ggmap)
 library(raster)
-
+setwd('/Users/kristinedahlarquero/Documents/ClimateAction')
 shinyServer(function(input,output) {
   
                 Fusion = raster('Fusion.tif')
@@ -44,8 +44,8 @@ shinyServer(function(input,output) {
                   })
 
                 output$preImage = renderImage({
-                    filename = "legend.png"
-                    list(src = filename,
-                    alt = paste("Legend"))
+                    "legend.png"
+                    #list(src = filename,
+                    #alt = paste("Legend"))
                     }, deleteFile = FALSE)
 })

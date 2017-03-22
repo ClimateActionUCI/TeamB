@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(pageWithSidebar(
-                        headerPanel("Land Use Change Under Four Different Emissions Scenarios"),
+                        headerPanel("Land Use Change Under Four Different IPCC Emissions Scenarios"),
                         sidebarPanel(
                                      sliderInput("year", "Year:",
                                                  min = 2000, max = 2100, step = 25, value = 2000),
@@ -11,5 +11,5 @@ shinyUI(pageWithSidebar(
                                                  selected = 1)),
                         mainPanel(
                                   plotOutput("values", width = "100%", height = "800px"),
-                                  imageOutput("legend"))
+                                  img(src="legend.png", align = "left", height="100%", width = "400px"))
                                      ))                                           
