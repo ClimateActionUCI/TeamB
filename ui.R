@@ -13,5 +13,4 @@ shinyUI(pageWithSidebar(
                                      ),
                         mainPanel(
                                   plotOutput("values", width = "100%", height = "800px"),
-                                  imageOutput("legend"))
                                      )                                           
