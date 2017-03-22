@@ -2,7 +2,6 @@ library(shiny)
 library(ggplot2)
 library(ggmap)
 library(raster)
-
 shinyServer(function(input,output) {
   
                 Fusion = raster('Fusion.tif')
