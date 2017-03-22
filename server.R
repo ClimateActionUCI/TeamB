@@ -32,7 +32,7 @@ shinyServer(function(input,output) {
                 listA1B = list(Fusion, A1B_2025, A1B_2050, A1B_2075, A1B_2100)
                 listB2 = list(Fusion, B2_2025, B2_2050, B2_2075, B2_2100)
   
-                all_matrix = rbind(listB1, listB2, listA1, listA2)
+                all_matrix = rbind(listB1, listB2, listA1B, listA2)
               
                 output$values = renderPlot({
                   print(input$scenario)
