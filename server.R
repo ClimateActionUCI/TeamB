@@ -34,7 +34,7 @@ shinyServer(function(input,output) {
   
                 all_matrix = rbind(listB1, listB2, listA1, listA2)
               
-                output$values <- renderPlot({
+                output$values = renderPlot({
                   print(input$scenario)
                   print(input$scenario)
                   mat_row = as.numeric(input$scenario)
@@ -42,4 +42,10 @@ shinyServer(function(input,output) {
                   temp = all_matrix[mat_row, mat_col][[1]]
                   raster::plot(temp)
                   })
+
+                output$preImage = renderImage({
+                    filename = "legend.png"
+                    list(src = filename,
+                    alt = paste("Legend"))
+                    }, deleteFile = FALSE)
 })

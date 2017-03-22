@@ -9,5 +9,7 @@ shinyUI(pageWithSidebar(
                                                  label = "Emissions Scenario:",
                                                  choices = list("Scenario B1" = 1, "Scenario B2" = 2, "Scenario A1" = 3, "Scenario A2" = 4),
                                                  selected = 1)),
-                        mainPanel(plotOutput("values", width = "100%", height = "800px"))
+                        mainPanel(
+                                  plotOutput("values", width = "100%", height = "800px"),
+                                  imageOutput("legend"))
                                      ))                                           
